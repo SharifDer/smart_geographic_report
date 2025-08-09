@@ -6,33 +6,8 @@ from shapely.geometry import Polygon, shape
 import sys
 import os
 import json
+from fetchers.utils import auth_token, generate_bbox
 
-def generate_bbox(center_lat , center_lng , radius_km=3):
-    delta = radius_km / 111
-    return {
-        "min_lng": center_lng - delta,
-        "max_lng": center_lng + delta,
-        "min_lat" : center_lat - delta,
-        "max_lat" : center_lat + delta
-    }
-
-def auth_token(email , password):
-    login_endpoint = "http://37.27.195.216:8000/fastapi/login"
-    login_data = {
-        "message": "string",
-        "request_info": {
-            "additionalProp1": {}
-        },
-        "request_body": {
-            "email": email,
-            "password": password
-        }
-        }
-    login_response = requests.post(url=login_endpoint , json=login_data)
-    data = login_response.json()
-    user_id = data["data"]["localId"]
-    token = data["data"]["idToken"]
-    return user_id , token
 
 def fetch_demographics(bbox, token=None, user_id=None):
     url = "http://37.27.195.216:8000/fastapi/fetch_population_by_viewport"
