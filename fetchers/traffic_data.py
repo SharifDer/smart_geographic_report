@@ -83,8 +83,6 @@ def get_traffic_data(conf):
         _, target_utc = get_last_monday_6pm_utc()
         data = fetch_traffic_data(conf, target_utc)
         metrics = extract_metrics(data)
-        save_to_json(conf , metrics)
+        return metrics
     except Exception as e :
         print(f"Error: {str(e)}")
-if __name__ == "__main__":
-    get_traffic_data(conf)
