@@ -1,6 +1,6 @@
 # Pharmacy Expansion Analysis: Riyadh Market Entry
 
-_Report generated: 2025-08-11 12:56:46Z_
+_Report generated: 2025-08-11 13:00:04Z_
 
 ### **Deliverables**
 
@@ -47,10 +47,6 @@ Top 10 candidates summary:
 | 8 | `24.73484992980957,46.792118072509766` | 24.734850 | 46.792118 | 42.09 | 42.1% |
 | 9 | `24.613752365112305,46.602638244628906` | 24.613752 | 46.602638 | 42.06 | 42.1% |
 | 10 | `24.52115821838379,46.52830505371094` | 24.521158 | 46.528305 | 40.76 | 40.8% |
-
-### Best candidate scoring breakdown
-
-![Best breakdown](charts/best_breakdown.png)
 
 ### Per-site detail breakdown (top candidates)
 
@@ -323,6 +319,11 @@ Top 10 candidates summary:
 | Complementary | ATMs | 0.0 | 0.00 |
 | Complementary | Banks | 0.0 | 0.00 |
 | **Complementary (Total)** |  |  | **0.00** |
+
+### Best candidate scoring breakdown
+
+![Best breakdown](charts/best_breakdown.png)
+
 
 ### Top candidates component comparison
 
