@@ -1,0 +1,20 @@
+{
+  "generated_at": "2025-08-11T12:56:46.876558Z",
+  "report_md": "report_output\\report.md",
+  "charts": {
+    "top_stacked": "report_output\\charts\\top_stacked.png",
+    "traffic": "report_output\\charts\\traffic_flow.png",
+    "best_breakdown": "report_output\\charts\\best_breakdown.png"
+  },
+  "map_html": "report_output\\maps\\candidates_map.html",
+  "map_png": null,
+  "heat_html": "report_output\\maps\\demographics_heatmap.html",
+  "heat_png": null,
+  "competition_html": null,
+  "competition_png": null,
+  "audit_files": {
+    "candidates_processed": "report_output\\data\\candidates_processed.csv",
+    "details_flattened": "report_output\\data\\candidates_details_flattened.csv"
+  },
+  "warnings": []
+}
