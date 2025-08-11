@@ -3,16 +3,6 @@ from datetime import datetime, timezone, timedelta
 import json
 import os
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from run_files import conf
-
-# TOMTOM_API = conf.tomtom_api
-# lat = conf.targeted_lat
-# lng = conf.targeted_lng
-# traffic_data_path = conf.traffic_data_folder
-# traffic_data_file = conf.traffic_data_file
-
-# os.makedirs(traffic_data_path , exist_ok=True)
 
 def get_last_monday_6pm_utc():
     today = datetime.now(timezone.utc)
@@ -67,17 +57,6 @@ def print_report(lat, lng, target_time_local, metrics):
         unit = "km/h" if "Speed" in k else "%"
         print(f"{k}: {v} {unit if k == 'Data Confidence' else ''}".strip())
     print("=" * 60)
-
-
-def save_to_json(conf ,metrics ,  output_path=conf.traffic_data_file):
-    result = {
-        "lat": conf.targeted_lat,
-        "lng": conf.targeted_lng,
-        **metrics
-    }
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=2)
-
 def get_traffic_data(conf):
     try : 
         _, target_utc = get_last_monday_6pm_utc()
