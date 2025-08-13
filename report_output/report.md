@@ -75,7 +75,7 @@ Top 10 candidates summary:
 | Complementary | Banks | 0.0 | 0.00 |
 | **Complementary (total)** |  |  | **0.00** |
 
-![Best breakdown](charts\best_breakdown.png)
+![Best breakdown](charts/best_breakdown.png)
 
 ### 2. شارع-احمد-ابن-حنبل-حي-الروابي-مدينة-الرياض-منطقة-الرياض
 
@@ -360,9 +360,9 @@ Top 10 candidates summary:
 
 ### Charts & Visualizations
 
-**Top candidates comparison:** ![top_stacked.png](charts\top_stacked.png)
+**Top candidates comparison:** ![top_stacked.png](charts/top_stacked.png)
 
-**Traffic flow:** ![traffic_flow.png](charts\traffic_flow.png)
+**Traffic flow:** ![traffic_flow.png](charts/traffic_flow.png)
 
 ---
 
