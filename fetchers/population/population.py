@@ -6,7 +6,7 @@ from shapely.geometry import Polygon, shape
 import sys
 import os
 import json
-from fetchers.utils import auth_token, generate_bbox
+from fetchers.utils import generate_bbox
 
 
 def fetch_demographics(bbox, token=None, user_id=None):
@@ -64,36 +64,29 @@ def process_demographics(data):
         "total_population": total_population,
         "total_male_count" : total_male_count,
         "total_female_count" : total_female_count,
-        "avg_density": sum(pop_density_values) / len(pop_density_values),
-        "avg_median_age": sum(age_values) / len(age_values),
-        "avg_median_male_age" : sum(male_age_values) / len(male_age_values),
-        "avg_median_female_age" : sum(female_age_values) / len(female_age_values),
-        "avg_income": sum(income_values) / len(income_values),
+        "avg_density": round((sum(pop_density_values) / len(pop_density_values)) , 2),
+        "avg_median_age": round((sum(age_values) / len(age_values)) , 2),
+        "avg_median_male_age" : round((sum(male_age_values) / len(male_age_values)) , 2),
+        "avg_median_female_age" : round((sum(female_age_values) / len(female_age_values)) , 2),
+        "avg_income": round((sum(income_values) / len(income_values)) , 2),
         # "geometries": geometries
     }
 
-def population_data(lat , lng , email , password):
-    all_results = []
-    site = {
-        "lat" : lat,
-        "lng" : lng
-    }
+def population_data(lat, lng, token, user_id):
     bbox = generate_bbox(lat, lng)
-    user_id, token = auth_token(email=email, password=password)
     raw_data = fetch_demographics(bbox, token=token, user_id=user_id)
     processed = process_demographics(raw_data)
-    all_results.append({
-        "site": site,
-        "data": processed  # store raw response for printing later
+
+    # Calculate additional fields
+    percentage_age_above_35 = (processed["avg_median_age"] - 35) + 50
+    percentage_mage_above_35 = (processed["avg_median_male_age"] - 35) + 50
+    percentage_fage_above_35 = (processed["avg_median_female_age"] - 35) + 50
+
+    # Add new percentages directly into processed dict
+    processed.update({
+        "percentage_age_above_35": percentage_age_above_35,
+        "percentage_mage_above_35": percentage_mage_above_35,
+        "percentage_fage_above_35": percentage_fage_above_35
     })
-    percentage_age_above_35 = (processed["avg_median_age"]- 35) + 50
-    percentage_mage_above_35 = (processed["avg_median_male_age"]- 35) + 50
-    percentage_fage_above_35 = (processed["avg_median_female_age"]- 35) + 50
-    all_results[0]["data"].update(
-        {
-            "percentage_age_above_35" : percentage_age_above_35,
-            "percentage_mage_above_35" : percentage_mage_above_35,
-             " percentage_fage_above_35" :  percentage_fage_above_35
-        }
-    )
-    return all_results
+
+    return processed
