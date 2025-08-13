@@ -1,33 +1,21 @@
 # Pharmacy Expansion Analysis: Riyadh Market Entry
 
-_Report generated: 2025-08-11 13:00:04Z_
-
-### **Deliverables**
-
-**1. Automated Report Generation**
-
-- **3-page markdown report** with:
-  - Page 1: Executive summary and top recommendations
-  - Page 2: Detailed site analysis with scoring breakdown
-  - Page 3: Maps, charts, and methodology overview
-
-- Embedded visualizations (maps, charts, tables)
-- Professional formatting with consistent styling
+_Report generated: 2025-08-13 14:09:24Z_
 
 ---
 
 ## Executive Summary
 
-**Top recommendation:** `24.735048294067383,46.664703369140625` (lat: 24.735048, lng: 46.664703)
+**Top recommendation:** `شارع-الأمير-بندر-بن-عبدالعزيز-حي-الخليج-مدينة-الرياض-منطقة-الرياض (lat: 24.765400, lng: 46.803593)
 
-**Score:** 50.28 / 100.0 (50.3%)
+**Score:** 48.53 / 100.0 (48.5%)
 
-**Key justifications:**
+**key criterion:**
+- **Demographics** — weighted contribution 18.94 (weight 30.0)
 - **Traffic** — weighted contribution 18.75 (weight 25.0)
-- **Demographics** — weighted contribution 18.24 (weight 30.0)
-- **Complementary** — weighted contribution 5.05 (weight 10.0)
-- **Healthcare** — weighted contribution 4.55 (weight 20.0)
-- **Competitive** — weighted contribution 3.69 (weight 15.0)
+- **Healthcare** — weighted contribution 5.78 (weight 20.0)
+- **Competitive** — weighted contribution 5.06 (weight 15.0)
+- **Complementary** — weighted contribution 0.00 (weight 10.0)
 
 ---
 
@@ -37,20 +25,22 @@ Top 10 candidates summary:
 
 | Rank | id | lat | lng | Total Score | Total % |
 |---:|---|---:|---:|---:|---:|
-| 1 | `24.735048294067383,46.664703369140625` | 24.735048 | 46.664703 | 50.28 | 50.3% |
-| 2 | `24.7136,46.6753` | 24.713600 | 46.675300 | 49.33 | 49.3% |
-| 3 | `24.70555877685547,46.78419876098633` | 24.705559 | 46.784199 | 48.70 | 48.7% |
-| 4 | `24.765399932861328,46.803592681884766` | 24.765400 | 46.803593 | 47.72 | 47.7% |
-| 5 | `24.861194610595703,46.62861633300781` | 24.861195 | 46.628616 | 43.99 | 44.0% |
-| 6 | `24.751220703125,46.57400131225586` | 24.751221 | 46.574001 | 43.81 | 43.8% |
-| 7 | `24.836605072021484,46.65959167480469` | 24.836605 | 46.659592 | 43.07 | 43.1% |
-| 8 | `24.73484992980957,46.792118072509766` | 24.734850 | 46.792118 | 42.09 | 42.1% |
-| 9 | `24.613752365112305,46.602638244628906` | 24.613752 | 46.602638 | 42.06 | 42.1% |
-| 10 | `24.52115821838379,46.52830505371094` | 24.521158 | 46.528305 | 40.76 | 40.8% |
+| 1 | `شارع-الأمير-بندر-بن-عبدالعزيز-حي-الخليج-مدينة-الرياض-منطقة-الرياض` | 24.765400 | 46.803593 | 48.53 | 48.5% |
+| 2 | `شارع-احمد-ابن-حنبل-حي-الروابي-مدينة-الرياض-منطقة-الرياض` | 24.705559 | 46.784199 | 45.75 | 45.7% |
+| 3 | `شارع-العليا-حي-الملك-فهد-مدينة-الرياض-منطقة-الرياض` | 24.735048 | 46.664703 | 45.23 | 45.2% |
+| 4 | `شارع-مسلة-حي-الاندلس-الرياض-منطقة-الرياض` | 24.734850 | 46.792118 | 44.65 | 44.7% |
+| 5 | `شارع-القنا-حي-النرجس-الرياض-منطقة-الرياض` | 24.836605 | 46.659592 | 42.38 | 42.4% |
+| 6 | `شارع-اللؤلؤة-حي-العارض-مدينة-الرياض-منطقة-الرياض` | 24.861195 | 46.628616 | 41.99 | 42.0% |
+| 7 | `شارع-وادى-فاطمه-حي-ضاحية-نمار-مدينة-الرياض-منطقة-الرياض` | 24.521158 | 46.528305 | 40.76 | 40.8% |
+| 8 | `شارع-حمزة-بن-عبدالمطلب-حي-العريجاء-الغربية-الرياض-منطقة-الرياض` | 24.613752 | 46.602638 | 40.34 | 40.3% |
+| 9 | `حي-الخالدية-الدرعية-الدرعية` | 24.751221 | 46.574001 | 37.17 | 37.2% |
+| 10 | `طريق-الملك-عبدالعزيز-حي-العارض-الرياض-منطقة-الرياض` | 24.901823 | 46.603397 | 26.42 | 26.4% |
 
 ### Per-site detail breakdown (top candidates)
 
-#### 1. `24.735048294067383,46.664703369140625` (lat 24.735048, lng 46.664703)
+#### 1. `شارع-الأمير-بندر-بن-عبدالعزيز-حي-الخليج-مدينة-الرياض-منطقة-الرياض` (lat 24.765400, lng 46.803593)
+
+[Location](https://www.google.com/maps/search/?api=1&query=24.765399932861328,46.803592681884766)
 
 | Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
 |---|---|---:|---:|
@@ -58,53 +48,28 @@ Top 10 candidates summary:
 | Traffic | highway score | 50.0 | 4.17 |
 | Traffic | Daily Vehicle count |  |  |
 | **Traffic (Total)** |  |  | **12.50** |
-| Demographics | Residential density within 3km driving radius | 68.6 | 5.15 |
-| Demographics | Age distribution above 35 | 48.0 | 3.60 |
-| Demographics | Income levels | 84.2 | 6.32 |
-| Demographics | Household composition | 42.4 | 3.18 |
-| **Demographics (Total)** |  |  | **18.24** |
-| Competitive | Distance to nearest pharmacy | 6.1 | 0.31 |
-| Competitive | Market saturation | 43.1 | 2.15 |
+| Demographics | Residential density within 3km driving radius | 88.3 | 6.62 |
+| Demographics | Age distribution above 35 | 43.3 | 3.25 |
+| Demographics | Income levels | 69.0 | 5.17 |
+| Demographics | Household composition | 52.0 | 3.90 |
+| **Demographics (Total)** |  |  | **18.94** |
+| Competitive | Distance to nearest pharmacy | 1.5 | 0.08 |
+| Competitive | Market saturation | 65.9 | 3.29 |
 | Competitive | Underserved population pockets |  |  |
-| **Competitive (Total)** |  |  | **2.46** |
-| Healthcare | Proximity to hospitals | 26.1 | 2.61 |
-| Healthcare | Proximity to dentists | 19.4 | 1.94 |
-| **Healthcare (Total)** |  |  | **4.55** |
-| Complementary | grocery store | 47.5 | 0.95 |
-| Complementary | supermarkets | 59.5 | 1.19 |
-| Complementary | restaurants | 19.2 | 0.38 |
-| Complementary | ATMs | 72.9 | 1.46 |
-| Complementary | Banks | 53.3 | 1.07 |
-| **Complementary (Total)** |  |  | **5.05** |
+| **Competitive (Total)** |  |  | **3.37** |
+| Healthcare | Proximity to hospitals | 30.4 | 3.04 |
+| Healthcare | Proximity to dentists | 27.3 | 2.73 |
+| **Healthcare (Total)** |  |  | **5.78** |
+| Complementary | grocery store | 0.0 | 0.00 |
+| Complementary | supermarkets | 0.0 | 0.00 |
+| Complementary | restaurants | 0.0 | 0.00 |
+| Complementary | ATMs | 0.0 | 0.00 |
+| Complementary | Banks | 0.0 | 0.00 |
+| **Complementary (Total)** |  |  | **0.00** |
 
-#### 2. `24.7136,46.6753` (lat 24.713600, lng 46.675300)
+#### 2. `شارع-احمد-ابن-حنبل-حي-الروابي-مدينة-الرياض-منطقة-الرياض` (lat 24.705559, lng 46.784199)
 
-| Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
-|---|---|---:|---:|
-| Traffic | Average Viechle Speed | 70.0 | 5.83 |
-| Traffic | highway score | 50.0 | 4.17 |
-| Traffic | Daily Vehicle count |  |  |
-| **Traffic (Total)** |  |  | **10.00** |
-| Demographics | Residential density within 3km driving radius | 83.8 | 6.29 |
-| Demographics | Age distribution above 35 | 48.5 | 3.64 |
-| Demographics | Income levels | 74.8 | 5.61 |
-| Demographics | Household composition | 40.8 | 3.06 |
-| **Demographics (Total)** |  |  | **18.59** |
-| Competitive | Distance to nearest pharmacy | 7.9 | 0.40 |
-| Competitive | Market saturation | 68.0 | 3.40 |
-| Competitive | Underserved population pockets |  |  |
-| **Competitive (Total)** |  |  | **3.79** |
-| Healthcare | Proximity to hospitals | 35.0 | 3.50 |
-| Healthcare | Proximity to dentists | 20.4 | 2.04 |
-| **Healthcare (Total)** |  |  | **5.54** |
-| Complementary | grocery store | 31.2 | 0.62 |
-| Complementary | supermarkets | 65.8 | 1.32 |
-| Complementary | restaurants | 43.4 | 0.87 |
-| Complementary | ATMs | 35.6 | 0.71 |
-| Complementary | Banks | 49.5 | 0.99 |
-| **Complementary (Total)** |  |  | **4.51** |
-
-#### 3. `24.70555877685547,46.78419876098633` (lat 24.705559, lng 46.784199)
+[Location](https://www.google.com/maps/search/?api=1&query=24.70555877685547,46.78419876098633)
 
 | Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
 |---|---|---:|---:|
@@ -124,41 +89,16 @@ Top 10 candidates summary:
 | Healthcare | Proximity to hospitals | 33.3 | 3.33 |
 | Healthcare | Proximity to dentists | 19.1 | 1.91 |
 | **Healthcare (Total)** |  |  | **5.24** |
-| Complementary | grocery store | 35.8 | 0.72 |
-| Complementary | supermarkets | 57.4 | 1.15 |
-| Complementary | restaurants | 54.4 | 1.09 |
+| Complementary | grocery store | 0.0 | 0.00 |
+| Complementary | supermarkets | 0.0 | 0.00 |
+| Complementary | restaurants | 0.0 | 0.00 |
 | Complementary | ATMs | 0.0 | 0.00 |
 | Complementary | Banks | 0.0 | 0.00 |
-| **Complementary (Total)** |  |  | **2.95** |
+| **Complementary (Total)** |  |  | **0.00** |
 
-#### 4. `24.765399932861328,46.803592681884766` (lat 24.765400, lng 46.803593)
+#### 3. `شارع-العليا-حي-الملك-فهد-مدينة-الرياض-منطقة-الرياض` (lat 24.735048, lng 46.664703)
 
-| Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
-|---|---|---:|---:|
-| Traffic | Average Viechle Speed | 70.0 | 5.83 |
-| Traffic | highway score | 50.0 | 4.17 |
-| Traffic | Daily Vehicle count |  |  |
-| **Traffic (Total)** |  |  | **10.00** |
-| Demographics | Residential density within 3km driving radius | 88.3 | 6.62 |
-| Demographics | Age distribution above 35 | 43.3 | 3.25 |
-| Demographics | Income levels | 69.0 | 5.17 |
-| Demographics | Household composition | 52.0 | 3.90 |
-| **Demographics (Total)** |  |  | **18.94** |
-| Competitive | Distance to nearest pharmacy | 1.5 | 0.08 |
-| Competitive | Market saturation | 65.9 | 3.29 |
-| Competitive | Underserved population pockets |  |  |
-| **Competitive (Total)** |  |  | **3.37** |
-| Healthcare | Proximity to hospitals | 30.4 | 3.04 |
-| Healthcare | Proximity to dentists | 27.3 | 2.73 |
-| **Healthcare (Total)** |  |  | **5.78** |
-| Complementary | grocery store | 36.3 | 0.73 |
-| Complementary | supermarkets | 18.4 | 0.37 |
-| Complementary | restaurants | 0.0 | 0.00 |
-| Complementary | ATMs | 21.9 | 0.44 |
-| Complementary | Banks | 70.4 | 1.41 |
-| **Complementary (Total)** |  |  | **2.94** |
-
-#### 5. `24.861194610595703,46.62861633300781` (lat 24.861195, lng 46.628616)
+[Location](https://www.google.com/maps/search/?api=1&query=24.735048294067383,46.664703369140625)
 
 | Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
 |---|---|---:|---:|
@@ -166,53 +106,57 @@ Top 10 candidates summary:
 | Traffic | highway score | 50.0 | 4.17 |
 | Traffic | Daily Vehicle count |  |  |
 | **Traffic (Total)** |  |  | **12.50** |
-| Demographics | Residential density within 3km driving radius | 37.0 | 2.78 |
-| Demographics | Age distribution above 35 | 43.4 | 3.25 |
-| Demographics | Income levels | 75.8 | 5.69 |
-| Demographics | Household composition | 67.0 | 5.03 |
-| **Demographics (Total)** |  |  | **16.74** |
-| Competitive | Distance to nearest pharmacy | 0.2 | 0.01 |
-| Competitive | Market saturation | 53.8 | 2.69 |
+| Demographics | Residential density within 3km driving radius | 68.6 | 5.15 |
+| Demographics | Age distribution above 35 | 48.0 | 3.60 |
+| Demographics | Income levels | 84.2 | 6.32 |
+| Demographics | Household composition | 42.4 | 3.18 |
+| **Demographics (Total)** |  |  | **18.24** |
+| Competitive | Distance to nearest pharmacy | 6.1 | 0.31 |
+| Competitive | Market saturation | 43.1 | 2.15 |
 | Competitive | Underserved population pockets |  |  |
-| **Competitive (Total)** |  |  | **2.70** |
-| Healthcare | Proximity to hospitals | 20.5 | 2.05 |
-| Healthcare | Proximity to dentists | 3.9 | 0.39 |
-| **Healthcare (Total)** |  |  | **2.44** |
-| Complementary | grocery store | 19.6 | 0.39 |
-| Complementary | supermarkets | 31.0 | 0.62 |
-| Complementary | restaurants | 9.8 | 0.20 |
-| Complementary | ATMs | 39.8 | 0.80 |
+| **Competitive (Total)** |  |  | **2.46** |
+| Healthcare | Proximity to hospitals | 26.1 | 2.61 |
+| Healthcare | Proximity to dentists | 19.4 | 1.94 |
+| **Healthcare (Total)** |  |  | **4.55** |
+| Complementary | grocery store | 0.0 | 0.00 |
+| Complementary | supermarkets | 0.0 | 0.00 |
+| Complementary | restaurants | 0.0 | 0.00 |
+| Complementary | ATMs | 0.0 | 0.00 |
 | Complementary | Banks | 0.0 | 0.00 |
-| **Complementary (Total)** |  |  | **2.00** |
+| **Complementary (Total)** |  |  | **0.00** |
 
-#### 6. `24.751220703125,46.57400131225586` (lat 24.751221, lng 46.574001)
+#### 4. `شارع-مسلة-حي-الاندلس-الرياض-منطقة-الرياض` (lat 24.734850, lng 46.792118)
+
+[Location](https://www.google.com/maps/search/?api=1&query=24.73484992980957,46.792118072509766)
 
 | Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
 |---|---|---:|---:|
-| Traffic | Average Viechle Speed | 30.0 | 2.50 |
+| Traffic | Average Viechle Speed | 70.0 | 5.83 |
 | Traffic | highway score | 50.0 | 4.17 |
 | Traffic | Daily Vehicle count |  |  |
-| **Traffic (Total)** |  |  | **6.67** |
-| Demographics | Residential density within 3km driving radius | 28.9 | 2.17 |
-| Demographics | Age distribution above 35 | 46.0 | 3.45 |
-| Demographics | Income levels | 90.3 | 6.77 |
-| Demographics | Household composition | 57.8 | 4.34 |
-| **Demographics (Total)** |  |  | **16.73** |
-| Competitive | Distance to nearest pharmacy | 0.4 | 0.02 |
-| Competitive | Market saturation | 80.3 | 4.01 |
+| **Traffic (Total)** |  |  | **10.00** |
+| Demographics | Residential density within 3km driving radius | 100.0 | 7.50 |
+| Demographics | Age distribution above 35 | 44.5 | 3.34 |
+| Demographics | Income levels | 72.7 | 5.45 |
+| Demographics | Household composition | 48.0 | 3.60 |
+| **Demographics (Total)** |  |  | **19.89** |
+| Competitive | Distance to nearest pharmacy | 9.3 | 0.46 |
+| Competitive | Market saturation | 77.0 | 3.85 |
 | Competitive | Underserved population pockets |  |  |
-| **Competitive (Total)** |  |  | **4.03** |
-| Healthcare | Proximity to hospitals | 36.1 | 3.61 |
-| Healthcare | Proximity to dentists | 7.8 | 0.78 |
-| **Healthcare (Total)** |  |  | **4.40** |
-| Complementary | grocery store | 74.6 | 1.49 |
-| Complementary | supermarkets | 72.5 | 1.45 |
-| Complementary | restaurants | 62.5 | 1.25 |
-| Complementary | ATMs | 56.0 | 1.12 |
-| Complementary | Banks | 66.1 | 1.32 |
-| **Complementary (Total)** |  |  | **6.63** |
+| **Competitive (Total)** |  |  | **4.31** |
+| Healthcare | Proximity to hospitals | 22.3 | 2.23 |
+| Healthcare | Proximity to dentists | 10.7 | 1.07 |
+| **Healthcare (Total)** |  |  | **3.30** |
+| Complementary | grocery store | 0.0 | 0.00 |
+| Complementary | supermarkets | 0.0 | 0.00 |
+| Complementary | restaurants | 0.0 | 0.00 |
+| Complementary | ATMs | 0.0 | 0.00 |
+| Complementary | Banks | 0.0 | 0.00 |
+| **Complementary (Total)** |  |  | **0.00** |
 
-#### 7. `24.836605072021484,46.65959167480469` (lat 24.836605, lng 46.659592)
+#### 5. `شارع-القنا-حي-النرجس-الرياض-منطقة-الرياض` (lat 24.836605, lng 46.659592)
+
+[Location](https://www.google.com/maps/search/?api=1&query=24.836605072021484,46.65959167480469)
 
 | Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
 |---|---|---:|---:|
@@ -232,41 +176,16 @@ Top 10 candidates summary:
 | Healthcare | Proximity to hospitals | 12.9 | 1.29 |
 | Healthcare | Proximity to dentists | 22.6 | 2.26 |
 | **Healthcare (Total)** |  |  | **3.55** |
-| Complementary | grocery store | 18.9 | 0.38 |
-| Complementary | supermarkets | 12.0 | 0.24 |
+| Complementary | grocery store | 0.0 | 0.00 |
+| Complementary | supermarkets | 0.0 | 0.00 |
 | Complementary | restaurants | 0.0 | 0.00 |
 | Complementary | ATMs | 0.0 | 0.00 |
-| Complementary | Banks | 3.5 | 0.07 |
-| **Complementary (Total)** |  |  | **0.69** |
+| Complementary | Banks | 0.0 | 0.00 |
+| **Complementary (Total)** |  |  | **0.00** |
 
-#### 8. `24.73484992980957,46.792118072509766` (lat 24.734850, lng 46.792118)
+#### 6. `شارع-اللؤلؤة-حي-العارض-مدينة-الرياض-منطقة-الرياض` (lat 24.861195, lng 46.628616)
 
-| Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
-|---|---|---:|---:|
-| Traffic | Average Viechle Speed | 30.0 | 2.50 |
-| Traffic | highway score | 50.0 | 4.17 |
-| Traffic | Daily Vehicle count |  |  |
-| **Traffic (Total)** |  |  | **6.67** |
-| Demographics | Residential density within 3km driving radius | 100.0 | 7.50 |
-| Demographics | Age distribution above 35 | 44.5 | 3.34 |
-| Demographics | Income levels | 72.7 | 5.45 |
-| Demographics | Household composition | 48.0 | 3.60 |
-| **Demographics (Total)** |  |  | **19.89** |
-| Competitive | Distance to nearest pharmacy | 9.3 | 0.46 |
-| Competitive | Market saturation | 77.0 | 3.85 |
-| Competitive | Underserved population pockets |  |  |
-| **Competitive (Total)** |  |  | **4.31** |
-| Healthcare | Proximity to hospitals | 22.3 | 2.23 |
-| Healthcare | Proximity to dentists | 10.7 | 1.07 |
-| **Healthcare (Total)** |  |  | **3.30** |
-| Complementary | grocery store | 16.1 | 0.32 |
-| Complementary | supermarkets | 16.1 | 0.32 |
-| Complementary | restaurants | 0.0 | 0.00 |
-| Complementary | ATMs | 62.6 | 1.25 |
-| Complementary | Banks | 27.3 | 0.55 |
-| **Complementary (Total)** |  |  | **2.44** |
-
-#### 9. `24.613752365112305,46.602638244628906` (lat 24.613752, lng 46.602638)
+[Location](https://www.google.com/maps/search/?api=1&query=24.861194610595703,46.62861633300781)
 
 | Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
 |---|---|---:|---:|
@@ -274,26 +193,28 @@ Top 10 candidates summary:
 | Traffic | highway score | 50.0 | 4.17 |
 | Traffic | Daily Vehicle count |  |  |
 | **Traffic (Total)** |  |  | **12.50** |
-| Demographics | Residential density within 3km driving radius | 36.4 | 2.73 |
-| Demographics | Age distribution above 35 | 44.5 | 3.34 |
-| Demographics | Income levels | 67.8 | 5.08 |
-| Demographics | Household composition | 67.6 | 5.07 |
-| **Demographics (Total)** |  |  | **16.22** |
-| Competitive | Distance to nearest pharmacy | 1.0 | 0.05 |
-| Competitive | Market saturation | 55.3 | 2.77 |
+| Demographics | Residential density within 3km driving radius | 37.0 | 2.78 |
+| Demographics | Age distribution above 35 | 43.4 | 3.25 |
+| Demographics | Income levels | 75.8 | 5.69 |
+| Demographics | Household composition | 67.0 | 5.03 |
+| **Demographics (Total)** |  |  | **16.74** |
+| Competitive | Distance to nearest pharmacy | 0.2 | 0.01 |
+| Competitive | Market saturation | 53.8 | 2.69 |
 | Competitive | Underserved population pockets |  |  |
-| **Competitive (Total)** |  |  | **2.82** |
-| Healthcare | Proximity to hospitals | 11.0 | 1.10 |
-| Healthcare | Proximity to dentists | 0.4 | 0.04 |
-| **Healthcare (Total)** |  |  | **1.14** |
-| Complementary | grocery store | 53.8 | 1.08 |
-| Complementary | supermarkets | 32.4 | 0.65 |
+| **Competitive (Total)** |  |  | **2.70** |
+| Healthcare | Proximity to hospitals | 20.5 | 2.05 |
+| Healthcare | Proximity to dentists | 3.9 | 0.39 |
+| **Healthcare (Total)** |  |  | **2.44** |
+| Complementary | grocery store | 0.0 | 0.00 |
+| Complementary | supermarkets | 0.0 | 0.00 |
 | Complementary | restaurants | 0.0 | 0.00 |
 | Complementary | ATMs | 0.0 | 0.00 |
 | Complementary | Banks | 0.0 | 0.00 |
-| **Complementary (Total)** |  |  | **1.72** |
+| **Complementary (Total)** |  |  | **0.00** |
 
-#### 10. `24.52115821838379,46.52830505371094` (lat 24.521158, lng 46.528305)
+#### 7. `شارع-وادى-فاطمه-حي-ضاحية-نمار-مدينة-الرياض-منطقة-الرياض` (lat 24.521158, lng 46.528305)
+
+[Location](https://www.google.com/maps/search/?api=1&query=24.52115821838379,46.52830505371094)
 
 | Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
 |---|---|---:|---:|
@@ -313,6 +234,93 @@ Top 10 candidates summary:
 | Healthcare | Proximity to hospitals | 0.0 | 0.00 |
 | Healthcare | Proximity to dentists | 0.0 | 0.00 |
 | **Healthcare (Total)** |  |  | **0.00** |
+| Complementary | grocery store | 0.0 | 0.00 |
+| Complementary | supermarkets | 0.0 | 0.00 |
+| Complementary | restaurants | 0.0 | 0.00 |
+| Complementary | ATMs | 0.0 | 0.00 |
+| Complementary | Banks | 0.0 | 0.00 |
+| **Complementary (Total)** |  |  | **0.00** |
+
+#### 8. `شارع-حمزة-بن-عبدالمطلب-حي-العريجاء-الغربية-الرياض-منطقة-الرياض` (lat 24.613752, lng 46.602638)
+
+[Location](https://www.google.com/maps/search/?api=1&query=24.613752365112305,46.602638244628906)
+
+| Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
+|---|---|---:|---:|
+| Traffic | Average Viechle Speed | 100.0 | 8.33 |
+| Traffic | highway score | 50.0 | 4.17 |
+| Traffic | Daily Vehicle count |  |  |
+| **Traffic (Total)** |  |  | **12.50** |
+| Demographics | Residential density within 3km driving radius | 36.4 | 2.73 |
+| Demographics | Age distribution above 35 | 44.5 | 3.34 |
+| Demographics | Income levels | 67.8 | 5.08 |
+| Demographics | Household composition | 67.6 | 5.07 |
+| **Demographics (Total)** |  |  | **16.22** |
+| Competitive | Distance to nearest pharmacy | 1.0 | 0.05 |
+| Competitive | Market saturation | 55.3 | 2.77 |
+| Competitive | Underserved population pockets |  |  |
+| **Competitive (Total)** |  |  | **2.82** |
+| Healthcare | Proximity to hospitals | 11.0 | 1.10 |
+| Healthcare | Proximity to dentists | 0.4 | 0.04 |
+| **Healthcare (Total)** |  |  | **1.14** |
+| Complementary | grocery store | 0.0 | 0.00 |
+| Complementary | supermarkets | 0.0 | 0.00 |
+| Complementary | restaurants | 0.0 | 0.00 |
+| Complementary | ATMs | 0.0 | 0.00 |
+| Complementary | Banks | 0.0 | 0.00 |
+| **Complementary (Total)** |  |  | **0.00** |
+
+#### 9. `حي-الخالدية-الدرعية-الدرعية` (lat 24.751221, lng 46.574001)
+
+[Location](https://www.google.com/maps/search/?api=1&query=24.751220703125,46.57400131225586)
+
+| Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
+|---|---|---:|---:|
+| Traffic | Average Viechle Speed | 30.0 | 2.50 |
+| Traffic | highway score | 50.0 | 4.17 |
+| Traffic | Daily Vehicle count |  |  |
+| **Traffic (Total)** |  |  | **6.67** |
+| Demographics | Residential density within 3km driving radius | 28.9 | 2.17 |
+| Demographics | Age distribution above 35 | 46.0 | 3.45 |
+| Demographics | Income levels | 90.3 | 6.77 |
+| Demographics | Household composition | 57.8 | 4.34 |
+| **Demographics (Total)** |  |  | **16.73** |
+| Competitive | Distance to nearest pharmacy | 0.4 | 0.02 |
+| Competitive | Market saturation | 80.3 | 4.01 |
+| Competitive | Underserved population pockets |  |  |
+| **Competitive (Total)** |  |  | **4.03** |
+| Healthcare | Proximity to hospitals | 36.1 | 3.61 |
+| Healthcare | Proximity to dentists | 7.8 | 0.78 |
+| **Healthcare (Total)** |  |  | **4.40** |
+| Complementary | grocery store | 0.0 | 0.00 |
+| Complementary | supermarkets | 0.0 | 0.00 |
+| Complementary | restaurants | 0.0 | 0.00 |
+| Complementary | ATMs | 0.0 | 0.00 |
+| Complementary | Banks | 0.0 | 0.00 |
+| **Complementary (Total)** |  |  | **0.00** |
+
+#### 10. `طريق-الملك-عبدالعزيز-حي-العارض-الرياض-منطقة-الرياض` (lat 24.901823, lng 46.603397)
+
+[Location](https://www.google.com/maps/search/?api=1&query=24.901823043823242,46.603397369384766)
+
+| Evaluation Criterion | Sub-factor | Raw Score (0–100) | Weighted Points |
+|---|---|---:|---:|
+| Traffic | Average Viechle Speed | 30.0 | 2.50 |
+| Traffic | highway score | 50.0 | 4.17 |
+| Traffic | Daily Vehicle count |  |  |
+| **Traffic (Total)** |  |  | **6.67** |
+| Demographics | Residential density within 3km driving radius | 11.0 | 0.82 |
+| Demographics | Age distribution above 35 | 44.0 | 3.30 |
+| Demographics | Income levels | 75.6 | 5.67 |
+| Demographics | Household composition | 49.4 | 3.71 |
+| **Demographics (Total)** |  |  | **13.50** |
+| Competitive | Distance to nearest pharmacy | 12.7 | 0.64 |
+| Competitive | Market saturation | 16.6 | 0.83 |
+| Competitive | Underserved population pockets |  |  |
+| **Competitive (Total)** |  |  | **1.47** |
+| Healthcare | Proximity to hospitals | 7.2 | 0.72 |
+| Healthcare | Proximity to dentists | 0.0 | 0.00 |
+| **Healthcare (Total)** |  |  | **0.72** |
 | Complementary | grocery store | 0.0 | 0.00 |
 | Complementary | supermarkets | 0.0 | 0.00 |
 | Complementary | restaurants | 0.0 | 0.00 |
@@ -355,7 +363,7 @@ _Note: interactive HTML maps require opening the listed .html files in a browser
 
 #### Competition analysis map: Existing pharmacies with coverage areas
 
-**File produced:** *(no competition file provided)*
+**File produced:** [competition_map.html](report_output\maps\competition_map.html)
 
 ---
 
@@ -367,9 +375,9 @@ _Note: interactive HTML maps require opening the listed .html files in a browser
 - Ranking: by total_score (descending).
 
 ### Why this candidate is best
-The top candidate `24.735048294067383,46.664703369140625` combines highest weighted contributions in traffic, demographics, complementary.
+The top candidate `شارع-الأمير-بندر-بن-عبدالعزيز-حي-الخليج-مدينة-الرياض-منطقة-الرياض` combines highest weighted contributions in demographics, traffic, healthcare.
 
-### Limitations & next steps
+[site location](https://www.google.com/maps/search/?api=1&query=24.765399932861328,46.803592681884766)### Limitations & next steps
 - Missing or "N/A" detail values were treated as neutral (not contributing).
 - Phase 2 planned features: dynamic weight controls (UI), isochrone-based catchments, competitor auto-ingest, interactive sensitivity analysis.
 
