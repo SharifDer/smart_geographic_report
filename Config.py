@@ -18,7 +18,7 @@ class Config():
     household_data_path : str = data_dir +"/v12.8z/v12/all_features.json"
     housing_data_path : str = data_dir + "/v12/v12/all_features.json"
     shops_for_rent : str = data_dir + "/shops_for_rent.json"
-
+    scoring_file_dir : str = data_dir + "/scores.json"
     @classmethod
     def get_conf(cls, lat , lng ,path="secrets/secrets.json" ):
         cls.targeted_lat = lat
