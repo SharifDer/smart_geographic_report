@@ -3,8 +3,8 @@ from fetchers.utils import generate_bbox, bbox_to_polygon, getting_data_category
 from shapely.geometry import Point
 
 
-def process_category_data(conf, user_id, token, typ):
-    category_data = getting_data_category(user_id, token, conf.raw_data, category=typ)
+def process_category_data(conf, typ , data):
+    category_data = data
 
     # Make polygon for radius area
     bbox = generate_bbox(conf.targeted_lat, conf.targeted_lng)
@@ -34,12 +34,12 @@ def process_category_data(conf, user_id, token, typ):
 
     return results
 
-def get_healthcare_data(conf, user_id, token):
+def get_healthcare_data(conf,hospital_data , dentist_data , pharmacies_data):
     types = ["hospital", "dentist"]
 
-    hospitals = process_category_data(conf, user_id, token, types[0])
-    dentists = process_category_data(conf, user_id, token, types[1])
-    pharmacies = process_category_data(conf, user_id, token, "pharmacy")
+    hospitals = process_category_data(conf,types[0] , hospital_data)
+    dentists = process_category_data(conf, types[1] , dentist_data )
+    pharmacies = process_category_data(conf, typ="pharmacy" , data=pharmacies_data)
     num_pharmacies = len(pharmacies.get("nearby_pharmacy", []))
     def top_n_closest(category_results, key, n=5):
         items = category_results.get(key, [])
