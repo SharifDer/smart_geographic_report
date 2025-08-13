@@ -368,7 +368,7 @@ Top 10 candidates summary:
 
 ### Maps
 
-**Candidates map:** ![candidates_map.png](maps/candidates_map.png)
+![candidates_map.png](maps/candidates_map.png)
 
 **Demographic heatmap:** ![demographics_heatmap.png](maps/demographics_heatmap.png)
 
