@@ -9,12 +9,12 @@ def score_demographics(pop_data: dict, weight_score: float) -> dict:
     Returns dict with weighted overall score and detailed scores.
     """
 
-    MAX_DENSITY = 8000    # people per sq km (adjust as max observed)
-    MAX_INCOME = 15000     # SAR monthly (approximate upper bound)
-    MAX_HOUSEHOLD_SIZE = 5 # large families in area
-
+    MAX_DENSITY = 6000    # people per sq km (adjust as max observed)
+    MAX_INCOME = 11000     # SAR monthly (approximate upper bound)
+    MAX_HOUSEHOLD_SIZE = 4 # large families in area
+ 
     density_score = min(pop_data.get("avg_density", 0) / MAX_DENSITY, 1.0)
-    age_score = min(pop_data.get("percentage_age_above_35", 0) / 100, 1.0)
+    age_score = min(pop_data.get("percentage_age_above_35", 0) / 60, 1.0)
     income_score = min(pop_data.get("avg_income", 0) / MAX_INCOME, 1.0)
     
     household_size = pop_data.get("Household_Median_Size", pop_data.get("Household_Average_Size", 1))
