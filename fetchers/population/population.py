@@ -77,11 +77,18 @@ def population_data(lat, lng, token, user_id):
     raw_data = fetch_demographics(bbox, token=token, user_id=user_id)
     processed = process_demographics(raw_data)
 
-    # Calculate additional fields
-    percentage_age_above_35 = (processed["avg_median_age"] - 35) + 50
-    percentage_mage_above_35 = (processed["avg_median_male_age"] - 35) + 50
-    percentage_fage_above_35 = (processed["avg_median_female_age"] - 35) + 50
+    if processed is None:
+        processed = {}
 
+    percentage_age_above_35 = (processed.get("avg_median_age", 0) - 35 + 50) if processed else 0
+    percentage_mage_above_35 = (processed.get("avg_median_male_age", 0) - 35 + 50) if processed else 0
+    percentage_fage_above_35 = (processed.get("avg_median_female_age", 0) - 35 + 50) if processed else 0
+
+    processed.update({
+        "percentage_age_above_35": percentage_age_above_35,
+        "percentage_mage_above_35": percentage_mage_above_35,
+        "percentage_fage_above_35": percentage_fage_above_35
+    })
     # Add new percentages directly into processed dict
     processed.update({
         "percentage_age_above_35": percentage_age_above_35,
