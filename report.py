@@ -453,15 +453,15 @@ def generate_markdown(sites: List[dict], outdir: str, out_md: str, top_n: int,
         else:
             md.write("**Demographic heatmap:** *not available or no demographic details found*\n\n")
 
-        md.write('---\n\n')
-        md.write('## Limitations & next steps\n\n')
-        md.write('- Missing detail values were treated as neutral (non-contributing).\n')
-        md.write('- For richer maps (tiles, basemaps), consider adding context tiles or running an HTML map generator.\n\n')
+        # md.write('---\n\n')
+        # md.write('## Limitations & next steps\n\n')
+        # md.write('- Missing detail values were treated as neutral (non-contributing).\n')
+        # md.write('- For richer maps (tiles, basemaps), consider adding context tiles or running an HTML map generator.\n\n')
 
-        md.write('---\n\n')
-        md.write('## Run manifest & artifacts\n\n')
-        md.write(f"- Manifest: `{os.path.basename(manifest_path)}`\n")
-        md.write(f"- Processed candidates JSON: `data/candidates_processed.json`\n\n")
+        # md.write('---\n\n')
+        # md.write('## Run manifest & artifacts\n\n')
+        # md.write(f"- Manifest: `{os.path.basename(manifest_path)}`\n")
+        # md.write(f"- Processed candidates JSON: `data/candidates_processed.json`\n\n")
 
     logging.info(f"Saved markdown: {md_path}")
 
