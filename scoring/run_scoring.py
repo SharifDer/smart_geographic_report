@@ -25,6 +25,7 @@ def run_full_scoring(Weights , locations_dir , targeted_scoring_file ):
 
         lat = data.get("lat")
         lng = data.get("lng")
+        place_name = data.get("place name")
         if lat is None or lng is None:
             print(f"Missing lat/lng in {filepath}, skipping")
             continue
@@ -35,18 +36,18 @@ def run_full_scoring(Weights , locations_dir , targeted_scoring_file ):
 
         traffic_data = location_data.get("traffic", {})
         healthcare_data = location_data.get("healthcare", {})
-        amenities_data = location_data.get("amenities", {})
+        amenities_data = location_data.get("nearest_businessess", {})
         pop_data = location_data.get("pop_data", {})
-
         frc_weights = Weights.frc_weights
         traffic_score_weight = Weights.traffic_score
-
-        traffic_score = score_traffic_for_retail(
-            average_speed=traffic_data.get("Average Vehicle Speed in km", 0),
-            frc=traffic_data.get("Functional Road Class", ""),
-            frc_weights=frc_weights,
-            traffic_score=traffic_score_weight
-        )
+        print("filename" , filepath)
+        if traffic_data:
+            traffic_score = score_traffic_for_retail(
+                average_speed=traffic_data.get("Average Vehicle Speed in km", 0),
+                frc=traffic_data.get("Functional Road Class", ""),
+                frc_weights=frc_weights,
+                traffic_score=traffic_score_weight
+            )
         
         demographics_score = score_demographics(pop_data, Weights.population_score)
         healthcare_score = score_healthcare_ecosystem(healthcare_data, Weights.healthcare_score)
@@ -55,6 +56,7 @@ def run_full_scoring(Weights , locations_dir , targeted_scoring_file ):
 
 
         results[loc_key] = {
+            "place name" : place_name,
             "lat": lat,
             "lng": lng,
             "scores": {
