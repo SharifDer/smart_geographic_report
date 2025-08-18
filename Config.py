@@ -51,7 +51,7 @@ class Weights():
         "FRC2": 0.3,
         "FRC3": 1,
         "FRC4": 1,  
-        "FRC5": 1,
+        "FRC5": 0.9,
         "FRC6": 0.9,
         "FRC7": 0.7,
         "FRC8" : 0.6
