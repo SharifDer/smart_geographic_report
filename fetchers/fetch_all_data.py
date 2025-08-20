@@ -1,9 +1,7 @@
 import json
-import sys
 import os
 
 # sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from fetchers.utils import auth_token
 from fetchers.population.household import household_data
 from fetchers.population.housings import housing_data
 from fetchers.population.population import population_data
@@ -11,8 +9,6 @@ from fetchers.traffic_data import get_traffic_data
 from fetchers.healthcare_system import get_healthcare_data
 from fetchers.complementary_businesses import get_other_businesses_data
 from fetchers.population.household import load_housing_features
-# from fetchers.population.housings import load_housing_features
-from fetchers.utils import getting_data_category
 import time
 from fetchers.data_loader import preload_categories
 
@@ -20,7 +16,7 @@ def fetch_data(conf, user_id, token , household_features ,
                 housings_features, hospitals , dentists ,
                 pharmacies,  grocery_store_data , supermarket_data,
                  restaurant_data, bank_data,
-                  atm_data , place_url ):
+                  atm_data , place_url , place_price ):
     # Fetch all datasets
     traffic = get_traffic_data(conf)
     households = household_data( conf.targeted_lat, conf.targeted_lng , features=household_features )
@@ -52,6 +48,7 @@ def fetch_data(conf, user_id, token , household_features ,
         "place name" : place_url ,
         "lat": conf.targeted_lat,
         "lng": conf.targeted_lng,
+        "price" : place_price,
         "location_data": {
             "traffic": traffic,
             "pop_data" : {
@@ -99,6 +96,7 @@ def fetch_full_data(conf , user_id , token):
     i = 0
            
     for feature in features:
+        price = feature["properties"]['price'] or 0
         geometry = feature['geometry']
         coordinates = geometry['coordinates']
         lng = coordinates[0]
@@ -117,8 +115,8 @@ def fetch_full_data(conf , user_id , token):
                     dentists=dentists,
                     pharmacies=pharmacies, supermarket_data=supermarket,
                     grocery_store_data=grocery_store , restaurant_data=restaurant,
-                    atm_data=atm , bank_data=bank , place_url=extracted_part)
+                    atm_data=atm , bank_data=bank , place_url=extracted_part , place_price = price)
         i += 1
-        if i % 10 == 0 :
-            print(f"number of locations have been fetched {i}")
+        if i  == 20 :
+           break
         time.sleep(0.5)
