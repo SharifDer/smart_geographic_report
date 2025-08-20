@@ -27,7 +27,7 @@ def auth_token(email , password):
     return user_id , token
 
 
-def generate_bbox(center_lat , center_lng , radius_km=3):
+def generate_bbox(center_lat , center_lng , radius_km=1):
     delta = radius_km / 111
     return {
         "min_lng": center_lng - delta,
