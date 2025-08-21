@@ -67,9 +67,9 @@ Strategy: Strong opportunity for entry and growth.
 
 **[🗺️ View on Google Maps](https://www.google.com/maps/search/?api=1&query=24.805070877075195,46.65626525878906)**
 
-![Site Map](maps\site_24.805070877075195,46.65626525878906_map.png)
+![Site Map](maps/site_24.805070877075195,46.65626525878906_map.png)
 
-[Open interactive map](maps\site_24.805070877075195,46.65626525878906_map.html)
+[Open interactive map](maps/site_24.805070877075195,46.65626525878906_map.html)
 
 | Criterion | Sub-factor | Raw Score | Weighted Points |
 |-----------|------------|-----------|----------------|
@@ -121,9 +121,9 @@ Strategy: Strong opportunity for entry and growth.
 
 **[🗺️ View on Google Maps](https://www.google.com/maps/search/?api=1&query=24.701431274414062,46.69670867919922)**
 
-![Site Map](maps\site_24.701431274414062,46.69670867919922_map.png)
+![Site Map](maps/site_24.701431274414062,46.69670867919922_map.png)
 
-[Open interactive map](maps\site_24.701431274414062,46.69670867919922_map.html)
+[Open interactive map](maps/site_24.701431274414062,46.69670867919922_map.html)
 
 | Criterion | Sub-factor | Raw Score | Weighted Points |
 |-----------|------------|-----------|----------------|
@@ -175,9 +175,9 @@ Strategy: Strong opportunity for entry and growth.
 
 **[🗺️ View on Google Maps](https://www.google.com/maps/search/?api=1&query=24.680593490600586,46.691219329833984)**
 
-![Site Map](maps\site_24.680593490600586,46.691219329833984_map.png)
+![Site Map](maps/site_24.680593490600586,46.691219329833984_map.png)
 
-[Open interactive map](maps\site_24.680593490600586,46.691219329833984_map.html)
+[Open interactive map](maps/site_24.680593490600586,46.691219329833984_map.html)
 
 | Criterion | Sub-factor | Raw Score | Weighted Points |
 |-----------|------------|-----------|----------------|
@@ -229,9 +229,9 @@ Strategy: Strong opportunity for entry and growth.
 
 **[🗺️ View on Google Maps](https://www.google.com/maps/search/?api=1&query=24.782751083374023,46.68308639526367)**
 
-![Site Map](maps\site_24.782751083374023,46.68308639526367_map.png)
+![Site Map](maps/site_24.782751083374023,46.68308639526367_map.png)
 
-[Open interactive map](maps\site_24.782751083374023,46.68308639526367_map.html)
+[Open interactive map](maps/site_24.782751083374023,46.68308639526367_map.html)
 
 | Criterion | Sub-factor | Raw Score | Weighted Points |
 |-----------|------------|-----------|----------------|
@@ -283,9 +283,9 @@ Strategy: Strong opportunity for entry and growth.
 
 **[🗺️ View on Google Maps](https://www.google.com/maps/search/?api=1&query=24.696073532104492,46.702476501464844)**
 
-![Site Map](maps\site_24.696073532104492,46.702476501464844_map.png)
+![Site Map](maps/site_24.696073532104492,46.702476501464844_map.png)
 
-[Open interactive map](maps\site_24.696073532104492,46.702476501464844_map.html)
+[Open interactive map](maps/site_24.696073532104492,46.702476501464844_map.html)
 
 | Criterion | Sub-factor | Raw Score | Weighted Points |
 |-----------|------------|-----------|----------------|
@@ -337,9 +337,9 @@ Strategy: Strong opportunity for entry and growth.
 
 **[🗺️ View on Google Maps](https://www.google.com/maps/search/?api=1&query=24.599382400512695,46.64126205444336)**
 
-![Site Map](maps\site_24.599382400512695,46.64126205444336_map.png)
+![Site Map](maps/site_24.599382400512695,46.64126205444336_map.png)
 
-[Open interactive map](maps\site_24.599382400512695,46.64126205444336_map.html)
+[Open interactive map](maps/site_24.599382400512695,46.64126205444336_map.html)
 
 | Criterion | Sub-factor | Raw Score | Weighted Points |
 |-----------|------------|-----------|----------------|
@@ -391,9 +391,9 @@ Strategy: Strong opportunity for entry and growth.
 
 **[🗺️ View on Google Maps](https://www.google.com/maps/search/?api=1&query=24.697532653808594,46.701881408691406)**
 
-![Site Map](maps\site_24.697532653808594,46.701881408691406_map.png)
+![Site Map](maps/site_24.697532653808594,46.701881408691406_map.png)
 
-[Open interactive map](maps\site_24.697532653808594,46.701881408691406_map.html)
+[Open interactive map](maps/site_24.697532653808594,46.701881408691406_map.html)
 
 | Criterion | Sub-factor | Raw Score | Weighted Points |
 |-----------|------------|-----------|----------------|
@@ -445,9 +445,9 @@ Strategy: Strong opportunity for entry and growth.
 
 **[🗺️ View on Google Maps](https://www.google.com/maps/search/?api=1&query=24.683395385742188,46.69009017944336)**
 
-![Site Map](maps\site_24.683395385742188,46.69009017944336_map.png)
+![Site Map](maps/site_24.683395385742188,46.69009017944336_map.png)
 
-[Open interactive map](maps\site_24.683395385742188,46.69009017944336_map.html)
+[Open interactive map](maps/site_24.683395385742188,46.69009017944336_map.html)
 
 | Criterion | Sub-factor | Raw Score | Weighted Points |
 |-----------|------------|-----------|----------------|
@@ -499,9 +499,9 @@ Strategy: Strong opportunity for entry and growth.
 
 **[🗺️ View on Google Maps](https://www.google.com/maps/search/?api=1&query=24.791393280029297,46.62589645385742)**
 
-![Site Map](maps\site_24.791393280029297,46.62589645385742_map.png)
+![Site Map](maps/site_24.791393280029297,46.62589645385742_map.png)
 
-[Open interactive map](maps\site_24.791393280029297,46.62589645385742_map.html)
+[Open interactive map](maps/site_24.791393280029297,46.62589645385742_map.html)
 
 | Criterion | Sub-factor | Raw Score | Weighted Points |
 |-----------|------------|-----------|----------------|
@@ -553,9 +553,9 @@ Strategy: Strong opportunity for entry and growth.
 
 **[🗺️ View on Google Maps](https://www.google.com/maps/search/?api=1&query=24.677122116088867,46.693965911865234)**
 
-![Site Map](maps\site_24.677122116088867,46.693965911865234_map.png)
+![Site Map](maps/site_24.677122116088867,46.693965911865234_map.png)
 
-[Open interactive map](maps\site_24.677122116088867,46.693965911865234_map.html)
+[Open interactive map](maps/site_24.677122116088867,46.693965911865234_map.html)
 
 | Criterion | Sub-factor | Raw Score | Weighted Points |
 |-----------|------------|-----------|----------------|
