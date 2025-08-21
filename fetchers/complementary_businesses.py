@@ -2,7 +2,7 @@
 from fetchers.utils import generate_bbox, bbox_to_polygon, calculate_distance
 from shapely.geometry import Point
 
-def process_category_data(conf, typ, data, distance_key='est_distance_meters', radius_km=1):
+def process_category_data(conf, typ, data, distance_key='est_distance_meters', radius_km=0.5):
     """
     Process category 'data' (already loaded). Returns {'nearby_{typ}': [...]}
     distance_key controls output field name so we don't change existing saved structures.
