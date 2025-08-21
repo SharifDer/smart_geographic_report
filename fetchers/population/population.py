@@ -61,13 +61,13 @@ def process_demographics(data):
         income_values.append(props.get("income", 0))
         geometries.append(shape(f["geometry"]))
     return {
-        "total_population": total_population,
-        "total_male_count" : total_male_count,
-        "total_female_count" : total_female_count,
+        # "total_population": total_population,
+        # "total_male_count" : total_male_count,
+        # "total_female_count" : total_female_count,
         "avg_density": round((sum(pop_density_values) / len(pop_density_values)) , 2),
         "avg_median_age": round((sum(age_values) / len(age_values)) , 2),
-        "avg_median_male_age" : round((sum(male_age_values) / len(male_age_values)) , 2),
-        "avg_median_female_age" : round((sum(female_age_values) / len(female_age_values)) , 2),
+        # "avg_median_male_age" : round((sum(male_age_values) / len(male_age_values)) , 2),
+        # "avg_median_female_age" : round((sum(female_age_values) / len(female_age_values)) , 2),
         "avg_income": round((sum(income_values) / len(income_values)) , 2),
         # "geometries": geometries
     }
@@ -90,10 +90,10 @@ def population_data(lat, lng, token, user_id):
         "percentage_fage_above_35": percentage_fage_above_35
     })
     # Add new percentages directly into processed dict
-    processed.update({
-        "percentage_age_above_35": percentage_age_above_35,
-        "percentage_mage_above_35": percentage_mage_above_35,
-        "percentage_fage_above_35": percentage_fage_above_35
-    })
+    # processed.update({
+    #     "percentage_age_above_35": percentage_age_above_35,
+    #     "percentage_mage_above_35": percentage_mage_above_35,
+    #     "percentage_fage_above_35": percentage_fage_above_35
+    # })
 
     return processed
