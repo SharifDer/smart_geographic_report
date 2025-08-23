@@ -41,6 +41,8 @@ def get_healthcare_data(conf,hospital_data , dentist_data , pharmacies_data):
     dentists = process_category_data(conf, types[1] , dentist_data )
     pharmacies = process_category_data(conf, typ="pharmacy" , data=pharmacies_data)
     num_pharmacies = len(pharmacies.get("nearby_pharmacy", []))
+    num_hospitals = len(hospitals.get("nearby_hospital" , []))
+    num_dentists = len(dentists.get("nearby_dentist", []))
     def top_n_closest(category_results, key, n=5):
         items = category_results.get(key, [])
         items_sorted = sorted(items, key=lambda x: x["est_driving_distance_meters"])
@@ -55,8 +57,11 @@ def get_healthcare_data(conf,hospital_data , dentist_data , pharmacies_data):
         "healthcare": {
              "pharmacy": {
                 "num_of_pharmacies": num_pharmacies,
+               
                 **pharmacies
             },
+            "num_of_hospitals" : num_hospitals,
+            "num_of_dentists" : num_dentists,
             **hospitals,
             **dentists,
            
