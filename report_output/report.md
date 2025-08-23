@@ -650,3 +650,14 @@ Our site suitability analysis employs a **comprehensive, data-driven approach**.
 - 🟡 60–79 → Good potential  
 - 🔴 <60 → Requires careful consideration
 
+## 📈 Key Statistical Insights
+
+- 💰 **Price vs Performance:** Among the 478 analysed properties, price showed a weak-to-moderate correlation with suitability, suggesting inefficiencies in the rental market and hidden value opportunities.
+- 🏪 **Business Ecosystem Impact:** Locations with more than 15 nearby businesses consistently achieved higher performance scores, highlighting the critical role of commercial density.
+- 🚗 **Traffic Flow Optimisation:** Optimal site performance was observed where average traffic speeds range between 20–35 km/h, balancing accessibility with manageable congestion.
+- 👥 **Demographic Alignment:** Variance from the target median age of 35 strongly influenced demographic scores, validating age-based targeting across diverse districts.
+
+---
+*Report generated using advanced geospatial analysis and machine learning algorithms.*  
+*Analysis covered 478 candidate locations with comprehensive multi-criteria scoring.*
+
