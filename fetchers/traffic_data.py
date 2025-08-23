@@ -32,16 +32,16 @@ def extract_metrics(data):
     if not segment:
         raise ValueError("No 'flowSegmentData' in API response")
 
-    travel_time_min = segment['currentTravelTime'] / 60
-    free_flow_time_min = segment['freeFlowTravelTime'] / 60
-    confidence = segment['confidence'] * 100
+    # travel_time_min = segment['currentTravelTime'] / 60
+    # free_flow_time_min = segment['freeFlowTravelTime'] / 60
+    # confidence = segment['confidence'] * 100
     current_speed = segment['currentSpeed']
     frc = segment['frc']
     return {
         "Average Vehicle Speed in km": current_speed,
-        "Travel Time minutes": round(travel_time_min, 1),
-        "Free-flow Travel Time": round(free_flow_time_min, 1),
-        "Data Confidence": round(confidence, 0),
+        # "Travel Time minutes": round(travel_time_min, 1),
+        # "Free-flow Travel Time": round(free_flow_time_min, 1),
+        # "Data Confidence": round(confidence, 0),
         "Functional Road Class": frc
     }
 
