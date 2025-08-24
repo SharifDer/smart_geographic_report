@@ -26,6 +26,7 @@ def run_full_scoring(Weights , locations_dir , targeted_scoring_file ):
         lat = data.get("lat")
         lng = data.get("lng")
         place_name = data.get("place name")
+        place_price = data.get("price")
         if lat is None or lng is None:
             print(f"Missing lat/lng in {filepath}, skipping")
             continue
@@ -33,14 +34,13 @@ def run_full_scoring(Weights , locations_dir , targeted_scoring_file ):
         # Compose key
         loc_key = f"{lat},{lng}"
         location_data = data.get("location_data", {})
-
+        num_of_businesses_around = location_data["num of business around"]
         traffic_data = location_data.get("traffic", {})
         healthcare_data = location_data.get("healthcare", {})
         amenities_data = location_data.get("nearest_businessess", {})
         pop_data = location_data.get("pop_data", {})
         frc_weights = Weights.frc_weights
         traffic_score_weight = Weights.traffic_score
-        print("filename" , filepath)
         if traffic_data:
             traffic_score = score_traffic_for_retail(
                 average_speed=traffic_data.get("Average Vehicle Speed in km", 0),
@@ -59,12 +59,24 @@ def run_full_scoring(Weights , locations_dir , targeted_scoring_file ):
             "place name" : place_name,
             "lat": lat,
             "lng": lng,
+            "price" : place_price,
             "scores": {
+                "overall_score" : (traffic_score["overall_score"] + demographics_score["overall_score"] + 
+                                   healthcare_score["overall_score"] + competitive_score["overall_score"] + complementary_score["overall_score"]),
                 "traffic": traffic_score,
                 "demographics": demographics_score,
                 "competitive": competitive_score,
                 "healthcare": healthcare_score,
                 "complementary": complementary_score,
+            },
+            "data" : {
+                'nearby Businesses within 500 meters' : num_of_businesses_around,
+               **(traffic_data or {}),
+                **(pop_data or {}),
+                'competing_pharmacies' : healthcare_data.get("pharmacy" , 0).get("num_of_pharmacies" , 0),
+                "pharmacies_per_10k_population" : healthcare_data.get("pharmacy").get("pharmacies_per_10k_population" ),
+                "number of hospitals around" : healthcare_data.get("num_of_hospitals"),
+                "number of dentists around" : healthcare_data.get("num_of_dentists") 
             }
         }
 
