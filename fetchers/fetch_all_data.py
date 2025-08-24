@@ -20,7 +20,7 @@ def fetch_data(conf, user_id, token , household_features ,
     # Fetch all datasets
     traffic = get_traffic_data(conf)
     households = household_data( conf.targeted_lat, conf.targeted_lng , features=household_features )
-    housings = housing_data(conf.targeted_lat, conf.targeted_lng, features=housings_features)
+    # housings = housing_data(conf.targeted_lat, conf.targeted_lng, features=housings_features)
     population = population_data(conf.targeted_lat, conf.targeted_lng, token=token, user_id=user_id)
     health_care_data = get_healthcare_data(conf , 
                                            hospital_data=hospitals , 
@@ -42,7 +42,7 @@ def fetch_data(conf, user_id, token , household_features ,
     pharmacies_per_10k = (num_pharmacies / total_population * 10000) if total_population and total_population > 0 else 0
 
     # Add the new key right under num_of_pharmacies
-    health_care_data["healthcare"]["pharmacy"]["pharmacies_per_10k_population"] = round(pharmacies_per_10k, 2)
+    health_care_data["healthcare"]["pharmacy"]["pharmacies_per_10k_population"] = pharmacies_per_10k
 
     data = {
         "place name" : place_url ,
@@ -53,7 +53,7 @@ def fetch_data(conf, user_id, token , household_features ,
             "traffic": traffic,
             "pop_data" : {
                 **households,
-                **housings,
+                # **housings,
                 **population
             },
         **health_care_data,
@@ -117,6 +117,6 @@ def fetch_full_data(conf , user_id , token):
                     grocery_store_data=grocery_store , restaurant_data=restaurant,
                     atm_data=atm , bank_data=bank , place_url=extracted_part , place_price = price)
         i += 1
-        if i  == 20 :
-           break
-        time.sleep(0.5)
+        if i  % 10 == 0:
+            print(f" {i} of locations have been fetched")
+            time.sleep(2)
