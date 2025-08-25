@@ -7,10 +7,10 @@ def score_competitive(healthcare_data, weight_score):
     else:
         nearest_distance = 3000  # large distance, underserved
     # Normalize distance score: farther is better, capped at 5 km
-    distance_score = min(nearest_distance / 500, 1.0)
+    distance_score = min(nearest_distance / 1000, 1.0)
 
     # Normalize saturation: assume 0 to 20 pharmacies per 10k population
-    saturation_score = max(0, (1 - pharmacies_per_10k))
+    saturation_score = max(0, (1 - pharmacies_per_10k)) if pharmacies_per_10k > 0 else 0
 
     # Average of the two criteria (0..1)
     average_score = (distance_score + saturation_score) / 2
@@ -20,7 +20,8 @@ def score_competitive(healthcare_data, weight_score):
         "details": {
             "Distance to nearest pharmacy": distance_score * 100,
             "Market saturation": saturation_score * 100,
-            "Underserved population pockets" : "N/A"
+            # "Underserved population pockets" : "N/A",
+            "competeing pharmacies around" : healthcare_data["pharmacy"]["num_of_pharmacies"]
         }
     }
 
