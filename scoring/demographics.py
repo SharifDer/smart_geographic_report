@@ -23,7 +23,7 @@ def score_demographics(pop_data: dict, weight_score: float) -> dict:
     average_score = (density_score + age_score + income_score + household_score) / 4
 
     return {
-        "overall_score": (average_score * weight_score) * 100,
+        "overall_score": (average_score  * weight_score) * 100,
         "details": {
             " Residential density within 3km driving radius": (density_score * 100),
             "Age distribution above 35": age_score * 100,
